@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mUserProduct"
+        android:title="Product" />
+
+    <item
+        android:id="@+id/mUserOrders"
+        android:title="Your Orders" />
+
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/mUserAbout"
+                android:title="About" />
+
+            <item
+                android:id="@+id/mUserLogOut"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>

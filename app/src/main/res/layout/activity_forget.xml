@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".ForgetActivity">
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/logo4_removebg_preview"
+        android:transitionName="logo_img"/>
+
+    <TextView
+        android:id="@+id/logoHi"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:fontFamily="@font/bungee"
+        android:text="Let's Come Back"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:transitionName="logo_text"/>
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill in Your Information to continue"
+        android:textSize="18sp"
+        android:transitionName="logo_desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:transitionName="user_trans">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/forget_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            app:cornerRadius="32dp"
+            android:backgroundTint="@color/black"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:transitionName="btn_sign_trans"/>
+
+        <Button
+            android:id="@+id/signin_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="Did You Remember? Sign In"
+            android:textColor="#000"
+            android:transitionName="signin_signup_trans"/>
+
+    </LinearLayout>
+
+</LinearLayout>

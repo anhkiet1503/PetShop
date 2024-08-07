@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Management">
+        <menu>
+            <item
+                android:id="@+id/mProduct"
+                android:title="Product" />
+
+            <item
+                android:id="@+id/mAccount"
+                android:title="Account" />
+
+            <item
+                android:id="@+id/mOrders"
+                android:title="Orders" />
+        </menu>
+    </item>
+
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/mAbout"
+                android:title="About" />
+
+            <item
+                android:id="@+id/mLogOut"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>
